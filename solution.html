@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error Solution</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+  <script>
+    // Solution: Wait until the DOM is fully loaded using DOMContentLoaded
+    document.addEventListener("DOMContentLoaded", function() {
+      document.getElementById("myDiv").innerHTML = "Hello, world!";
+    });
+  </script>
+</body>
+</html>
