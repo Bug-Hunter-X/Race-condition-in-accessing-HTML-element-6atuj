@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+  <script>
+    // This is a common error: trying to access a non-existent element
+    // immediately after the page loads.
+    document.getElementById("myDiv").innerHTML = "Hello, world!"; 
+  </script>
+</body>
+</html>
